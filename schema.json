@@ -1,0 +1,19 @@
+{
+    name: String,
+	author: ObjectId,
+	timestamp: Timestamp, 
+	public: Boolean,
+	categories: [String],
+	prepTime: Number,
+	cookTime: Number,
+	sections: [
+		title: String,
+		ingredients: [{
+			name: String,
+			quantity: [Number]
+		}]
+		instructions: [String],
+	],
+    servingSuggestions: [Number],
+    variations: [String]
+}
